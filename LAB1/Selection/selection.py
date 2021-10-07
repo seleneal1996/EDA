@@ -17,7 +17,7 @@ n = int(archivo[0])
 arr = []
 dato = archivo[1].split()
 for i in range (n):
-    arr.append(int(dato[i]))
+  arr.append(int(dato[i]))
 start = time()
 SelectionSort(arr)
 finish = time()
