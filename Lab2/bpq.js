@@ -1,3 +1,4 @@
+// Bounded priority queue class
 class BPQ
 {
     constructor(size)
