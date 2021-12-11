@@ -9,7 +9,8 @@ En el siguiente trabajo se implementó el M-Tree en C++.  En lugar de tener que 
 3. SplitFunction se utilizará para dividir un nodo cuando está en su capacidad máxima y un nuevo hijo debe ser adicional. Por defecto, es una composición de random_promotion y
 balanced_partition.
 
-Considerar que el directorio mtree fue una base para entender el funcionamiento 😅 , se agradece a [tburette](https://github.com/tburette/mtree) 🥰. Los dataset usados se encuentran en este [link](https://www.worldometers.info/coronavirus) 
+Considerar que el directorio mtree fue una base para entender el funcionamiento 😅 , se agradece a [tburette](https://github.com/tburette/mtree) 🥰. 
+Los dataset usados se encuentran en este [link](https://www.worldometers.info/coronavirus) fueron usandos para el experimento. 
 
 🤩
 
