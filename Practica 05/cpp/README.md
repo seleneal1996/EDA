@@ -1,4 +1,5 @@
 Este laboratorio se realizo escuchando el siguiente [remix](https://www.youtube.com/watch?v=Vq_OlYypkN8&ab_channel=AlexGarcia%27-Per%C3%BA) para calmar la sed 🍺 
+
 **LABORATORIO 5: M-TREE**
 
 En el siguiente trabajo se implementó el M-Tree en C++.  En lugar de tener que crear una subclase para definir nuevas funciones de soporte (distance, split, promotion, partition), se uso argumentos de plantilla:
