@@ -7,17 +7,9 @@
 #include "word-distance.h"
 #include "mtree.h"
 using namespace std;
-
-
-//const char DICT_FILE[] = "pt-br.dic";
 const char DICT_FILE[] = "en.dic";
 
-
-
 int main(int argc, const char* argv[]) {
-	//cout << wordDistance("gol", "bola") << endl;
-	//cout << wordDistance(argv[1], argv[2]); return 0;
-
 	size_t wordsLimit = (argc > 1) ? atoi(argv[1]) : 1000000;
 
 	WordMTree mtree;
@@ -31,7 +23,6 @@ int main(int argc, const char* argv[]) {
 		getline(f, line);
 
 		if(!line.empty()  &&  line[0] != '%') {
-			//word = unicode(line.strip(), 'utf-8')	TODO: implement encoding
 			auto word = line;
 			mtree.add(word);
 			loadedWords++;
@@ -49,7 +40,6 @@ int main(int argc, const char* argv[]) {
 	printf("TIMES: %0.2fuser %0.02fsys %0.2freal\n\n", times.user, times.sys, times.real);
 
 	while(true) {
-		//word = unicode(raw_input("Type a word: "), 'utf-8')	TODO: implement encoding
 		cout << "Type a word: ";
 		string word;
 		getline(cin, word);

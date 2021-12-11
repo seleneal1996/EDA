@@ -89,4 +89,4 @@ private:
 };
 
 
-#endif /* WORD_DISTANCE_H_ */
+#endif

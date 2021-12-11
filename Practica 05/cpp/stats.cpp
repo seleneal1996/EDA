@@ -7,11 +7,7 @@
 #include <vector>
 #include <cassert>
 #include "word-distance.h"
-
 using namespace std;
-
-
-//const char DICT_FILE[] = "pt-br.dic";
 const char DICT_FILE[] = "en.dic";
 
 enum {
@@ -22,8 +18,6 @@ enum {
 	TOP_MIN_CAPACITY = 2000,
 	TOP_LIMIT = 500,
 };
-
-
 WordMTree createMTree(const vector<string>& words, size_t minNodeCapacity) {
 	cerr << "Creating M-Tree with minNodeCapacity=" << minNodeCapacity << endl;
 	WordMTree mtree(minNodeCapacity);
@@ -82,10 +76,6 @@ void test(const WordMTree& mtree, const vector<string>& testWords, size_t minNod
 		     << endl;
 	}
 }
-
-
-
-
 
 int main() {
 	srand(time(NULL));
