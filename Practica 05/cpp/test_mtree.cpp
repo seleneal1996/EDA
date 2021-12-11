@@ -1,4 +1,3 @@
-// Doesn't make sense to compile this without assertions!
 #undef NDEBUG
 
 #include <algorithm>
@@ -52,7 +51,7 @@ private:
 	};
 
 public:
-	// Turning the member public
+	
 	using MTree::distance_function;
 
 	MTreeTest()
@@ -134,12 +133,6 @@ public:
 	void testGeneratedCase02() { _test("fG02"); }
 
 	void testNotRandom() {
-		/*
-		 * To generate a random test, execute the following commands:
-		 * 		py/mtree/tests/fixtures/generator.py -a500 -r0.2 > py/mtree/tests/fixtures/fNotRandom.py
-		 * 		cpp/convert-fixture-to-cpp.py fNotRandom > cpp/tests/fixtures/fNotRandom.txt
-		 */
-
 		const string fixtureName = "fNotRandom";
 		string fixtureFileName = Fixture::path(fixtureName);
 		if(!ifstream(fixtureFileName)) {
@@ -166,151 +159,86 @@ public:
 
 		auto query = mt.get_nearest(0);
 
-#define assertBeginEnd(ITER, BEGIN, END);   \
-        assert(ITER BEGIN query.begin());   \
-        assert(ITER END   query.end());
-
-#define assertIter(ITER, BEGIN, END, DATA, DIST)   \
-		assertBeginEnd(ITER, BEGIN, END);          \
-        assertEqual(ITER->data, DATA);             \
-        assertEqual(ITER->distance, DIST)
-
-#define assertCompareIters(I1, C12, I2, C23, I3, C31, I1_)   \
-        assert(I1 C12 I2);                                   \
-        assert(I2 C23 I3);                                   \
-        assert(I3 C31 I1_)
-
-		// The first iterator
 		auto i1 = query.begin();
-		/*     1  2  3  4  e
-		 * i1: *
-		 */
+	
 		assertIter(i1, ==, !=, 1, 1);
-
-		// Advance the iterator
 		i1++;
-		/*     1  2  3  4  e
-		 * i1:    *
-		 */
+	
 		assertIter(i1, !=, !=, 2, 2);
-
-		// Advance again
 		++i1;
-		/*     1  2  3  4  e
-		 * i1:       *
-		 */
+		
 		assertIter(i1, !=, !=, 3, 3);
 
-		// Begin another iteration
 		auto i2 = query.begin();
-		/*     1  2  3  4  e
-		 * i1:       *
-		 * i2: *
-		 */
+		
 		assertIter(i2, ==, !=, 1, 1);
 		assert(i2 != i1);
-		// The first iterator must not have been affected
+		
 		assertIter(i1, !=, !=, 3, 3);
 
-		// Copy the first iterator
+		
 		auto i3 = i1;
-		/*     1  2  3  4  e
-		 * i1:       *
-		 * i2: *
-		 * i3:       *
-		 */
+
 		assertIter(i3, !=, !=, 3, 3);
-		// The first iterator must not have been affected
+
 		assertIter(i1, !=, !=, 3, 3);
-		// The second iterator must not have been affected
+		
 		assertIter(i2, ==, !=, 1, 1);
-		// Compare the iterators
+		
 		assertCompareIters(i1, !=, i2, !=, i3, ==, i1);
 
-		// Now continue until all the iterators reach the end
+		
 		++i2;
-		/*     1  2  3  4  e
-		 * i1:       *
-		 * i2:    *
-		 * i3:       *
-		 */
+		
 		assertIter(i1, !=, !=, 3, 3);
 		assertIter(i2, !=, !=, 2, 2);
 		assertIter(i3, !=, !=, 3, 3);
 		assertCompareIters(i1, !=, i2, !=, i3, ==, i1);
 
 		i1++;
-		/*     1  2  3  4  e
-		 * i1:          *
-		 * i2:    *
-		 * i3:       *
-		 */
+
 		assertIter(i1, !=, !=, 4, 4);
 		assertIter(i2, !=, !=, 2, 2);
 		assertIter(i3, !=, !=, 3, 3);
 		assertCompareIters(i1, !=, i2, !=, i3, !=, i1);
 
 		i2++;
-		/*     1  2  3  4  e
-		 * i1:          *
-		 * i2:       *
-		 * i3:       *
-		 */
+	
 		assertIter(i1, !=, !=, 4, 4);
 		assertIter(i2, !=, !=, 3, 3);
 		assertIter(i3, !=, !=, 3, 3);
 		assertCompareIters(i1, !=, i2, ==, i3, !=, i1);
 
 		++i3;
-		/*     1  2  3  4  e
-		 * i1:          *
-		 * i2:       *
-		 * i3:          *
-		 */
+		
 		assertIter(i1, !=, !=, 4, 4);
 		assertIter(i2, !=, !=, 3, 3);
 		assertIter(i3, !=, !=, 4, 4);
 		assertCompareIters(i1, !=, i2, !=, i3, ==, i1);
 
 		i3++;
-		/*     1  2  3  4  e
-		 * i1:          *
-		 * i2:       *
-		 * i3:             *
-		 */
+		
 		assertIter(i1, !=, !=, 4, 4);
 		assertIter(i2, !=, !=, 3, 3);
 		assertBeginEnd(i3, !=, ==);
 		assertCompareIters(i1, !=, i2, !=, i3, !=, i1);
 
 		++i2;
-		/*     1  2  3  4  e
-		 * i1:          *
-		 * i2:          *
-		 * i3:             *
-		 */
+	
 		assertIter(i1, !=, !=, 4, 4);
 		assertIter(i2, !=, !=, 4, 4);
 		assertBeginEnd(i3, !=, ==);
 		assertCompareIters(i1, ==, i2, !=, i3, !=, i1);
 
 		++i2;
-		/*     1  2  3  4  e
-		 * i1:          *
-		 * i2:             *
-		 * i3:             *
-		 */
+
 		assertIter(i1, !=, !=, 4, 4);
 		assertBeginEnd(i2, !=, ==);
 		assertBeginEnd(i3, !=, ==);
 		assertCompareIters(i1, !=, i2, ==, i3, !=, i1);
 
 		++i1;
-		/*     1  2  3  4  e
-		 * i1:             *
-		 * i2:             *
-		 * i3:             *
-		 */
+		
 		assertBeginEnd(i1, !=, ==);
 		assertBeginEnd(i2, !=, ==);
 		assertBeginEnd(i3, !=, ==);
@@ -372,14 +300,10 @@ private:
 		double previousDistance = 0;
 
 		for(ResultsVector::iterator i = results.begin(); i != results.end(); i++) {
-			// Check if increasing distance
+			
 			assertLessEqual(previousDistance, i->distance);
 			previousDistance = i->distance;
-
-			// Check if every item in the results came from the generated queryData
 			assertIn(i->data, allData);
-
-			// Check if every item in the results is within the range
 			assertLessEqual(i->distance, radius);
 			assertEqual(mtree.distance_function(i->data, queryData), i->distance);
 		}
@@ -443,10 +367,6 @@ private:
 	}
 };
 
-
-
-
-
 int main() {
 #define RUN_TEST(T)   cout << "Running " #T "..." << endl; Test().T()
 	RUN_TEST(testEmpty);
@@ -477,7 +397,6 @@ int main() {
 	RUN_TEST(testNotRandom);
 	RUN_TEST(testIterators);
 #undef RUN_TEST
-
 	cout << "DONE" << endl;
 	return 0;
 }
