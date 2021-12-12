@@ -3,7 +3,7 @@ Este laboratorio se realizo escuchando el siguiente [remix](https://www.youtube.
 
 ## **Laboratorio 5: M-TREE** **🚀**
 
-En el siguiente trabajo se implementó el * M-Tree en C++*.  En lugar de tener que crear una subclase para definir nuevas funciones de soporte (distance, split, promotion, partition), se uso argumentos de plantilla:
+En el siguiente trabajo se implementó el *M-Tree en C++*.  En lugar de tener que crear una subclase para definir nuevas funciones de soporte (distance, split, promotion, partition), se uso argumentos de plantilla:
 
 1. El tipo de datos que indexará el M-Tree debe ser un tipo asignable y se debe definir un orden débil estricto std :: less <Data>.
 2. El metodo DistanceFunction se utilizará para calcular la distancia entre dos objetos de datos, por defecto, es *euclidean_distance*.
