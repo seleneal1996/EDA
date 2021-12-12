@@ -1,5 +1,5 @@
 ## **Antes de empezar**
-Ante que nada, este laboratorio se realizo escuchando el siguiente [remix](https://www.youtube.com/watch?v=Vq_OlYypkN8&ab_channel=AlexGarcia%27-Per%C3%BA) para calmar la sed 🍺 
+Este laboratorio se realizo escuchando el siguiente [remix](https://www.youtube.com/watch?v=Vq_OlYypkN8&ab_channel=AlexGarcia%27-Per%C3%BA) para calmar la sed 🍺 
 
 ## **Laboratorio 5: M-TREE** **🚀**
 
