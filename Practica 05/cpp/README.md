@@ -1,7 +1,7 @@
 ## **Antes de empezar**
 Este laboratorio se realizo escuchando el siguiente [remix](https://www.youtube.com/watch?v=Vq_OlYypkN8&ab_channel=AlexGarcia%27-Per%C3%BA) para calmar la sed 🍺 
 
-👁️ Debes Intalar *Graphviz* para generar los graficos.
+👁️ Debes instalar *Graphviz* para generar los graficos.
 
 ## **Laboratorio 5: M-TREE** **🚀**
 
