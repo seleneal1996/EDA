@@ -1,6 +1,8 @@
 ## **Antes de empezar**
 Este laboratorio se realizo escuchando el siguiente [remix](https://www.youtube.com/watch?v=Vq_OlYypkN8&ab_channel=AlexGarcia%27-Per%C3%BA) para calmar la sed 🍺 
 
+👁️ Debes Intalar *Graphviz* para generar los graficos.
+
 ## **Laboratorio 5: M-TREE** **🚀**
 
 En el siguiente trabajo se implementó el *M-Tree en C++*.  En lugar de tener que crear una subclase para definir nuevas funciones de soporte (distance, split, promotion, partition), se uso argumentos de plantilla:
@@ -14,8 +16,8 @@ Los dataset usados se encuentran en este [link](https://www.worldometers.info/co
 
 ## **Autores ✒️**
 
-1. Barrios Cornejo Selene [seleneal1996](https://github.com/seleneal1996)
-2. Ccalluchi Lopez Luis Alberto [cheems-dev](https://github.com/cheems-dev)
+1. Barrios Cornejo Selene [seleneal1996](https://github.com/seleneal1996) 
+2. Ccalluchi Lopez Luis Alberto [cheems-dev](https://github.com/cheems-dev) 
 3. Bustinza Cornejo Alejandra [Al3p4](https://github.com/Al3p4)
 
 ## **Licencia 📄**
