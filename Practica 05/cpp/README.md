@@ -3,7 +3,7 @@ Este laboratorio se realizo escuchando el siguiente [remix](https://www.youtube.
 
 👁️ Debes instalar *Graphviz* para generar los graficos.
 
-## **Laboratorio 5: M-TREE** **🚀**
+## **Laboratorio 5: M-TREE** **🌳**
 
 En el siguiente trabajo se implementó el *M-Tree en C++*.  En lugar de tener que crear una subclase para definir nuevas funciones de soporte (distance, split, promotion, partition), se uso argumentos de plantilla:
 
