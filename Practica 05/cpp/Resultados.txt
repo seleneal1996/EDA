@@ -1,0 +1,133 @@
+Loading words...
+words loaded
+Test words: 
+Creating M-Tree with minNodeCapacity=2
+Adding words...
+CREATE-MTREE    minNodeCapacity=2       userTime=0      sysTime=0  realTime=0
+M-Tree created
+Testing minNodeCapacity=2, limit=1
+Testing minNodeCapacity=2, limit=2
+Testing minNodeCapacity=2, limit=4
+Testing minNodeCapacity=2, limit=8
+Testing minNodeCapacity=2, limit=16
+Testing minNodeCapacity=2, limit=32
+Testing minNodeCapacity=2, limit=64
+Testing minNodeCapacity=2, limit=128
+Testing minNodeCapacity=2, limit=256
+Creating M-Tree with minNodeCapacity=4
+Adding words...
+CREATE-MTREE    minNodeCapacity=4       userTime=0      sysTime=0  realTime=0
+M-Tree created
+Testing minNodeCapacity=4, limit=1
+Testing minNodeCapacity=4, limit=2
+Testing minNodeCapacity=4, limit=4
+Testing minNodeCapacity=4, limit=8
+Testing minNodeCapacity=4, limit=16
+Testing minNodeCapacity=4, limit=32
+Testing minNodeCapacity=4, limit=64
+Testing minNodeCapacity=4, limit=128
+Testing minNodeCapacity=4, limit=256
+Creating M-Tree with minNodeCapacity=8
+Adding words...
+CREATE-MTREE    minNodeCapacity=8       userTime=0      sysTime=0  realTime=0
+M-Tree created
+Testing minNodeCapacity=8, limit=1
+Testing minNodeCapacity=8, limit=2
+Testing minNodeCapacity=8, limit=4
+Testing minNodeCapacity=8, limit=8
+Testing minNodeCapacity=8, limit=16
+Testing minNodeCapacity=8, limit=32
+Testing minNodeCapacity=8, limit=64
+Testing minNodeCapacity=8, limit=128
+Testing minNodeCapacity=8, limit=256
+Creating M-Tree with minNodeCapacity=16
+Adding words...
+CREATE-MTREE    minNodeCapacity=16      userTime=0      sysTime=0  realTime=0
+M-Tree created
+Testing minNodeCapacity=16, limit=1
+Testing minNodeCapacity=16, limit=2
+Testing minNodeCapacity=16, limit=4
+Testing minNodeCapacity=16, limit=8
+Testing minNodeCapacity=16, limit=16
+Testing minNodeCapacity=16, limit=32
+Testing minNodeCapacity=16, limit=64
+Testing minNodeCapacity=16, limit=128
+Testing minNodeCapacity=16, limit=256
+Creating M-Tree with minNodeCapacity=32
+Adding words...
+CREATE-MTREE    minNodeCapacity=32      userTime=0      sysTime=0  realTime=0
+M-Tree created
+Testing minNodeCapacity=32, limit=1
+Testing minNodeCapacity=32, limit=2
+Testing minNodeCapacity=32, limit=4
+Testing minNodeCapacity=32, limit=8
+Testing minNodeCapacity=32, limit=16
+Testing minNodeCapacity=32, limit=32
+Testing minNodeCapacity=32, limit=64
+Testing minNodeCapacity=32, limit=128
+Testing minNodeCapacity=32, limit=256
+Creating M-Tree with minNodeCapacity=64
+Adding words...
+CREATE-MTREE    minNodeCapacity=64      userTime=0      sysTime=0  realTime=0
+M-Tree created
+Testing minNodeCapacity=64, limit=1
+Testing minNodeCapacity=64, limit=2
+Testing minNodeCapacity=64, limit=4
+Testing minNodeCapacity=64, limit=8
+Testing minNodeCapacity=64, limit=16
+Testing minNodeCapacity=64, limit=32
+Testing minNodeCapacity=64, limit=64
+Testing minNodeCapacity=64, limit=128
+Testing minNodeCapacity=64, limit=256
+Creating M-Tree with minNodeCapacity=128
+Adding words...
+CREATE-MTREE    minNodeCapacity=128     userTime=0      sysTime=0  realTime=0
+M-Tree created
+Testing minNodeCapacity=128, limit=1
+Testing minNodeCapacity=128, limit=2
+Testing minNodeCapacity=128, limit=4
+Testing minNodeCapacity=128, limit=8
+Testing minNodeCapacity=128, limit=16
+Testing minNodeCapacity=128, limit=32
+Testing minNodeCapacity=128, limit=64
+Testing minNodeCapacity=128, limit=128
+Testing minNodeCapacity=128, limit=256
+Creating M-Tree with minNodeCapacity=256
+Adding words...
+CREATE-MTREE    minNodeCapacity=256     userTime=0      sysTime=0  realTime=0
+M-Tree created
+Testing minNodeCapacity=256, limit=1
+Testing minNodeCapacity=256, limit=2
+Testing minNodeCapacity=256, limit=4
+Testing minNodeCapacity=256, limit=8
+Testing minNodeCapacity=256, limit=16
+Testing minNodeCapacity=256, limit=32
+Testing minNodeCapacity=256, limit=64
+Testing minNodeCapacity=256, limit=128
+Testing minNodeCapacity=256, limit=256
+Creating M-Tree with minNodeCapacity=512
+Adding words...
+CREATE-MTREE    minNodeCapacity=512     userTime=0      sysTime=0  realTime=0
+M-Tree created
+Testing minNodeCapacity=512, limit=1
+Testing minNodeCapacity=512, limit=2
+Testing minNodeCapacity=512, limit=4
+Testing minNodeCapacity=512, limit=8
+Testing minNodeCapacity=512, limit=16
+Testing minNodeCapacity=512, limit=32
+Testing minNodeCapacity=512, limit=64
+Testing minNodeCapacity=512, limit=128
+Testing minNodeCapacity=512, limit=256
+Creating M-Tree with minNodeCapacity=1024
+Adding words...
+CREATE-MTREE    minNodeCapacity=1024    userTime=0      sysTime=0  realTime=0
+M-Tree created
+Testing minNodeCapacity=1024, limit=1
+Testing minNodeCapacity=1024, limit=2
+Testing minNodeCapacity=1024, limit=4
+Testing minNodeCapacity=1024, limit=8
+Testing minNodeCapacity=1024, limit=16
+Testing minNodeCapacity=1024, limit=32
+Testing minNodeCapacity=1024, limit=64
+Testing minNodeCapacity=1024, limit=128
+Testing minNodeCapacity=1024, limit=256
