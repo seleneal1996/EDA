@@ -2,7 +2,8 @@
 Este laboratorio se realizo escuchando el siguiente [remix](https://www.youtube.com/watch?v=Vq_OlYypkN8&ab_channel=AlexGarcia%27-Per%C3%BA) para calmar la sed 🍺 
 
 👁️ Debes instalar *Graphviz* para generar los graficos.
-    El codigo tiene los comandos para generar el .dot y la imagen en formato .png
+
+👨‍💻 El codigo tiene los comandos para generar el .dot y la imagen en formato .png
 
 ## **Laboratorio 5: M-TREE** **🌳**
 
